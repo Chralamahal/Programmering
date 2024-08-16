@@ -6,8 +6,6 @@ let pages
 
 function setup(){
     console.log("hej")
-
-
     pages = selectAll('.page')
     console.log(pages.length)
 }
