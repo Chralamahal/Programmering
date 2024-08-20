@@ -1,8 +1,8 @@
 alert('sig ok hvis du elsker hjorte')
 
-let currentPage = 2;
-
+let currentPage = 3;
 let pages
+let colors = ['red',    'navy', 'green',    'pink']
 
 function setup(){
     console.log("hej")
@@ -11,6 +11,14 @@ function setup(){
 
     pages = selectAll('.page')
     console.log(pages.length)
+
+    //makes divs in page 3
+    for(c of colors){
+        console.log(c);
+        let div = createDiv()
+        div.style('background-color', c)
+        select('#page3').child(div)
+    }
 }
 
 function shiftPage(num){
