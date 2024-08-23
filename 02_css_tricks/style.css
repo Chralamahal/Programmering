@@ -55,11 +55,27 @@ h2{
 }
 
 .box{
+    position: relative;
     width:  80%;
     height: 80%;
     display:    grid;
     place-items:center;
     border: 1px solid rgb(255,255,255);
+}
+.absolute{
+    position: absolute;
+    top:2rem;
+    right:2rem;
+    font-size: 2rem;
+    color: azure;
+}
+.fixed{
+    position: fixed;
+    bottom: 1.5rem;
+    right: 2rem;
+    font-size: 3rem;
+    color: rgb(106, 234, 26);
+    text-shadow: 4px 4px 5px rgb(107, 3, 110);
 }
 .halfbox{
     grid-template-columns: 1fr 1fr;
